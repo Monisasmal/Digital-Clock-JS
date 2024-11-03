@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(https://mahdisohaily.github.io/Leaderboard/images/pattern-hills.svg), url(https://mahdisohaily.github.io/Leaderboard/images/bg-stars.svg), hsl(235deg 20.15% 21.09%);
+    ;
+    background-repeat: no-repeat;
+    background-size: contain,cover;
+    background-position: bottom;
+    color: white;
+    height: 100vh;
+}
+h1{
+    margin-bottom: 20px;
+}
+h2{
+    margin-bottom: 10px;
+}
+.wrapper{
+   height: 100px;
+   width: 360px;
+   position: relative;
+   background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+   border-radius: 10px;
+   animation: animate 1.5s linear infinite;
+}
+.wrapper .display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    height: 85px;
+    width: 345px;
+    border-radius: 6px;
+    background: rgba(28,28,28,0.8);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.display #digitalTime{
+    line-height: 85px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0.8);  
+  border-radius: 10px;
+  
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+  }
+  
